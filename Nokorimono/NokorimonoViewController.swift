@@ -23,7 +23,7 @@ class NokorimonoViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        Alamofire.request("https://api.edamam.com/search?q=\(search)&app_id=eedecc1c&app_key=a064d0e3ff0a1ed49878358bef62b8d5&from=0&to=50").responseJSON { (responseData) -> Void in
+        Alamofire.request("https://api.edamam.com/search?q=\(search)&app_id=eedecc1c&app_key=a064d0e3ff0a1ed49878358bef62b8d5").responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let dataDictionary = JSON(responseData.result.value!)
                 self.recipes = dataDictionary["hits"]
