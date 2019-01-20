@@ -1,0 +1,6 @@
+framework module Pods_NokorimonoUITests {
+  umbrella header "Pods-NokorimonoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

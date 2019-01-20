@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07CA7FFA591A325C2077D626 /* Pods_NokorimonoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D83170370D6F007EC13A098 /* Pods_NokorimonoTests.framework */; };
 		2D3A925821F422F600D46FB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A925721F422F600D46FB8 /* AppDelegate.swift */; };
-		2D3A925A21F422F600D46FB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A925921F422F600D46FB8 /* ViewController.swift */; };
 		2D3A925D21F422F600D46FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A925B21F422F600D46FB8 /* Main.storyboard */; };
 		2D3A925F21F422F700D46FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A925E21F422F700D46FB8 /* Assets.xcassets */; };
 		2D3A926221F422F700D46FB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A926021F422F700D46FB8 /* LaunchScreen.storyboard */; };
 		2D3A926D21F422F700D46FB8 /* NokorimonoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A926C21F422F700D46FB8 /* NokorimonoTests.swift */; };
 		2D3A927821F422F700D46FB8 /* NokorimonoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A927721F422F700D46FB8 /* NokorimonoUITests.swift */; };
+		2D3A928621F4232E00D46FB8 /* NokorimonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A928521F4232E00D46FB8 /* NokorimonoViewController.swift */; };
+		2D3A928A21F45DA100D46FB8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A928921F45DA100D46FB8 /* SwiftyJSON.swift */; };
+		2DB1510021F4833F00EC21AB /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB150FF21F4833F00EC21AB /* RecipeCell.swift */; };
+		2DB1510221F4879600EC21AB /* WebsiteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB1510121F4879600EC21AB /* WebsiteController.swift */; };
+		2DEC1A7021F4BCDA00F0DAAC /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */; };
+		3E98612A769D7F806B845F03 /* Pods_Nokorimono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5924D1925C58E7C62D15D1 /* Pods_Nokorimono.framework */; };
+		FE73BDBB365FE0DCC885CFBC /* Pods_NokorimonoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31C751ECA3B9A749BDC58D7 /* Pods_NokorimonoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		051721FFF6718259F22FE920 /* Pods-NokorimonoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokorimonoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NokorimonoTests/Pods-NokorimonoTests.release.xcconfig"; sourceTree = "<group>"; };
+		0D83170370D6F007EC13A098 /* Pods_NokorimonoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NokorimonoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A925421F422F600D46FB8 /* Nokorimono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nokorimono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A925721F422F600D46FB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D3A925921F422F600D46FB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D3A925C21F422F600D46FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D3A925E21F422F700D46FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3A926121F422F700D46FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,18 @@
 		2D3A927321F422F700D46FB8 /* NokorimonoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NokorimonoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A927721F422F700D46FB8 /* NokorimonoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NokorimonoUITests.swift; sourceTree = "<group>"; };
 		2D3A927921F422F700D46FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3A928521F4232E00D46FB8 /* NokorimonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NokorimonoViewController.swift; sourceTree = "<group>"; };
+		2D3A928921F45DA100D46FB8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Carthage/Checkouts/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
+		2DB150FF21F4833F00EC21AB /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		2DB1510121F4879600EC21AB /* WebsiteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteController.swift; sourceTree = "<group>"; };
+		2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		387794BFDBFC084B4FEB195E /* Pods-NokorimonoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokorimonoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokorimonoUITests/Pods-NokorimonoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EF7D3157294BB542C8E520E /* Pods-Nokorimono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nokorimono.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nokorimono/Pods-Nokorimono.release.xcconfig"; sourceTree = "<group>"; };
+		7C82E6E9954B5975679A1232 /* Pods-NokorimonoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokorimonoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokorimonoTests/Pods-NokorimonoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CE93CB3D29F51E0940BC46A /* Pods-Nokorimono.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nokorimono.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nokorimono/Pods-Nokorimono.debug.xcconfig"; sourceTree = "<group>"; };
+		817891A5D4310777DF0A0DE3 /* Pods-NokorimonoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokorimonoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NokorimonoUITests/Pods-NokorimonoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA5924D1925C58E7C62D15D1 /* Pods_Nokorimono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nokorimono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31C751ECA3B9A749BDC58D7 /* Pods_NokorimonoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NokorimonoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E98612A769D7F806B845F03 /* Pods_Nokorimono.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07CA7FFA591A325C2077D626 /* Pods_NokorimonoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE73BDBB365FE0DCC885CFBC /* Pods_NokorimonoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,8 @@
 				2D3A926B21F422F700D46FB8 /* NokorimonoTests */,
 				2D3A927621F422F700D46FB8 /* NokorimonoUITests */,
 				2D3A925521F422F600D46FB8 /* Products */,
+				DAAB86E1D8C148AA548E55CD /* Pods */,
+				C9CACE30E721874FD864FA57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +123,15 @@
 			isa = PBXGroup;
 			children = (
 				2D3A925721F422F600D46FB8 /* AppDelegate.swift */,
-				2D3A925921F422F600D46FB8 /* ViewController.swift */,
 				2D3A925B21F422F600D46FB8 /* Main.storyboard */,
+				2DB1510121F4879600EC21AB /* WebsiteController.swift */,
 				2D3A925E21F422F700D46FB8 /* Assets.xcassets */,
 				2D3A926021F422F700D46FB8 /* LaunchScreen.storyboard */,
 				2D3A926321F422F700D46FB8 /* Info.plist */,
+				2D3A928921F45DA100D46FB8 /* SwiftyJSON.swift */,
+				2D3A928521F4232E00D46FB8 /* NokorimonoViewController.swift */,
+				2DB150FF21F4833F00EC21AB /* RecipeCell.swift */,
+				2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */,
 			);
 			path = Nokorimono;
 			sourceTree = "<group>";
@@ -125,6 +154,29 @@
 			path = NokorimonoUITests;
 			sourceTree = "<group>";
 		};
+		C9CACE30E721874FD864FA57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA5924D1925C58E7C62D15D1 /* Pods_Nokorimono.framework */,
+				0D83170370D6F007EC13A098 /* Pods_NokorimonoTests.framework */,
+				E31C751ECA3B9A749BDC58D7 /* Pods_NokorimonoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAAB86E1D8C148AA548E55CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CE93CB3D29F51E0940BC46A /* Pods-Nokorimono.debug.xcconfig */,
+				5EF7D3157294BB542C8E520E /* Pods-Nokorimono.release.xcconfig */,
+				7C82E6E9954B5975679A1232 /* Pods-NokorimonoTests.debug.xcconfig */,
+				051721FFF6718259F22FE920 /* Pods-NokorimonoTests.release.xcconfig */,
+				387794BFDBFC084B4FEB195E /* Pods-NokorimonoUITests.debug.xcconfig */,
+				817891A5D4310777DF0A0DE3 /* Pods-NokorimonoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D3A927C21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "Nokorimono" */;
 			buildPhases = (
+				BB24B1A761038EEA46CDEEB4 /* [CP] Check Pods Manifest.lock */,
 				2D3A925021F422F600D46FB8 /* Sources */,
 				2D3A925121F422F600D46FB8 /* Frameworks */,
 				2D3A925221F422F600D46FB8 /* Resources */,
+				C94D595720D624CC04194E5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D3A927F21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "NokorimonoTests" */;
 			buildPhases = (
+				E8ED5DAFCC45F57D6EA31A47 /* [CP] Check Pods Manifest.lock */,
 				2D3A926421F422F700D46FB8 /* Sources */,
 				2D3A926521F422F700D46FB8 /* Frameworks */,
 				2D3A926621F422F700D46FB8 /* Resources */,
+				C94BE8D9213272888A656DD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D3A928221F422F700D46FB8 /* Build configuration list for PBXNativeTarget "NokorimonoUITests" */;
 			buildPhases = (
+				927ECE66379A167A4B58579F /* [CP] Check Pods Manifest.lock */,
 				2D3A926F21F422F700D46FB8 /* Sources */,
 				2D3A927021F422F700D46FB8 /* Frameworks */,
 				2D3A927121F422F700D46FB8 /* Resources */,
+				7388C10A76D6DA9A79B793EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,13 +309,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7388C10A76D6DA9A79B793EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NokorimonoUITests/Pods-NokorimonoUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NokorimonoUITests/Pods-NokorimonoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		927ECE66379A167A4B58579F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NokorimonoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB24B1A761038EEA46CDEEB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nokorimono-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94BE8D9213272888A656DD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NokorimonoTests/Pods-NokorimonoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NokorimonoTests/Pods-NokorimonoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94D595720D624CC04194E5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nokorimono/Pods-Nokorimono-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nokorimono/Pods-Nokorimono-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8ED5DAFCC45F57D6EA31A47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NokorimonoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D3A925021F422F600D46FB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3A925A21F422F600D46FB8 /* ViewController.swift in Sources */,
+				2DB1510221F4879600EC21AB /* WebsiteController.swift in Sources */,
+				2D3A928A21F45DA100D46FB8 /* SwiftyJSON.swift in Sources */,
 				2D3A925821F422F600D46FB8 /* AppDelegate.swift in Sources */,
+				2DEC1A7021F4BCDA00F0DAAC /* InputViewController.swift in Sources */,
+				2D3A928621F4232E00D46FB8 /* NokorimonoViewController.swift in Sources */,
+				2DB1510021F4833F00EC21AB /* RecipeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +631,7 @@
 		};
 		2D3A927D21F422F700D46FB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE93CB3D29F51E0940BC46A /* Pods-Nokorimono.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +649,7 @@
 		};
 		2D3A927E21F422F700D46FB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EF7D3157294BB542C8E520E /* Pods-Nokorimono.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +667,7 @@
 		};
 		2D3A928021F422F700D46FB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C82E6E9954B5975679A1232 /* Pods-NokorimonoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +688,7 @@
 		};
 		2D3A928121F422F700D46FB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 051721FFF6718259F22FE920 /* Pods-NokorimonoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +709,7 @@
 		};
 		2D3A928321F422F700D46FB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 387794BFDBFC084B4FEB195E /* Pods-NokorimonoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +729,7 @@
 		};
 		2D3A928421F422F700D46FB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817891A5D4310777DF0A0DE3 /* Pods-NokorimonoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
