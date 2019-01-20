@@ -88,7 +88,7 @@
                                     <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oIU-Mi-mbI" kind="modal" id="5rJ-U4-Erf"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="0PZ-yJ-UXG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Ingredients" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-ON-Fsp">
@@ -158,24 +158,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vg8-Sa-Gnf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-442" y="-288"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="s0N-Li-Sbu">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oIU-Mi-mbI" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0aN-4s-EZZ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fzl-u9-C10"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iIS-iB-59z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1028" y="-288.30584707646182"/>
         </scene>
     </scenes>
     <resources>
