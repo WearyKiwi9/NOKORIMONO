@@ -18,7 +18,7 @@
 		2DB1510021F4833F00EC21AB /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB150FF21F4833F00EC21AB /* RecipeCell.swift */; };
 		2DB1510221F4879600EC21AB /* WebsiteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB1510121F4879600EC21AB /* WebsiteController.swift */; };
 		2DEC1A7021F4BCDA00F0DAAC /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */; };
-		2DEC1A7221F4F6DD00F0DAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DEC1A7121F4F6DD00F0DAAC /* Assets.xcassets */; };
+		2DEC1A7421F5020E00F0DAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DEC1A7321F5020E00F0DAAC /* Assets.xcassets */; };
 		3E98612A769D7F806B845F03 /* Pods_Nokorimono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5924D1925C58E7C62D15D1 /* Pods_Nokorimono.framework */; };
 		FE73BDBB365FE0DCC885CFBC /* Pods_NokorimonoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31C751ECA3B9A749BDC58D7 /* Pods_NokorimonoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,7 +59,7 @@
 		2DB150FF21F4833F00EC21AB /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		2DB1510121F4879600EC21AB /* WebsiteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteController.swift; sourceTree = "<group>"; };
 		2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
-		2DEC1A7121F4F6DD00F0DAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		2DEC1A7321F5020E00F0DAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 		387794BFDBFC084B4FEB195E /* Pods-NokorimonoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokorimonoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokorimonoUITests/Pods-NokorimonoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EF7D3157294BB542C8E520E /* Pods-Nokorimono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nokorimono.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nokorimono/Pods-Nokorimono.release.xcconfig"; sourceTree = "<group>"; };
 		7C82E6E9954B5975679A1232 /* Pods-NokorimonoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokorimonoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokorimonoTests/Pods-NokorimonoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,10 +127,10 @@
 				2DB1510121F4879600EC21AB /* WebsiteController.swift */,
 				2D3A926021F422F700D46FB8 /* LaunchScreen.storyboard */,
 				2D3A926321F422F700D46FB8 /* Info.plist */,
-				2DEC1A7121F4F6DD00F0DAAC /* Assets.xcassets */,
 				2D3A928921F45DA100D46FB8 /* SwiftyJSON.swift */,
 				2D3A928521F4232E00D46FB8 /* NokorimonoViewController.swift */,
 				2DB150FF21F4833F00EC21AB /* RecipeCell.swift */,
+				2DEC1A7321F5020E00F0DAAC /* Assets.xcassets */,
 				2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */,
 			);
 			path = Nokorimono;
@@ -288,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3A926221F422F700D46FB8 /* LaunchScreen.storyboard in Resources */,
-				2DEC1A7221F4F6DD00F0DAAC /* Assets.xcassets in Resources */,
+				2DEC1A7421F5020E00F0DAAC /* Assets.xcassets in Resources */,
 				2D3A925D21F422F600D46FB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
