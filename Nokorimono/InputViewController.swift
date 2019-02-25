@@ -11,28 +11,58 @@ import UIKit
 class InputViewController: UIViewController {
 
     @IBOutlet weak var enterButton: UIButton!
-    @IBOutlet weak var ingredientInputField: UITextField!
     @IBOutlet weak var dishField: UITextField!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    @IBAction func indexChanged(_ sender: Any) {
+        switch segmentedControl.selectedSegmentIndex
+        {
+        case 0:
+            dishField.isHidden = false
+            nextButton.isHidden = true
+            enterButton.isHidden = false
+        case 1:
+            dishField.isHidden = true
+            nextButton.isHidden = false
+            enterButton.isHidden = true
+        default:
+            break
+        }
+    }
     
     var search = ""
     var ingredients: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dishField.isHidden = true
+        nextButton.isHidden = true
+        enterButton.isHidden = true
     }
     
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
     }
-
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            let vc = segue.destination as! NokorimonoViewController
+//            vc.search = dishField.text ?? "chicken"
+//
+//    }
+//
+//    func scanbutton(sender:UIButton!) {
+//        performSegue(withIdentifier: "enterButton", sender: self)
+//    }
+//
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! NokorimonoViewController
-        vc.search = dishField.text ?? "chicken"
-        vc.ingredients = (ingredientInputField.text?.split{$0 == " "}.map(String.init) ?? [])
-    }
-    
-    func scanbutton(sender:UIButton!) {
-        performSegue(withIdentifier: "enterButton", sender: self)
+        if segue.identifier == "DishNext" {
+            let vc = segue.destination as! NokorimonoViewController
+            vc.search = dishField.text ?? "chicken"
+        } else if segue.identifier == "IngredientNext" {
+            let controller = segue.destination as! IngredientsViewController
+            //controller.history = self.history
+        }
     }
 
 }
