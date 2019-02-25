@@ -129,18 +129,18 @@
 			isa = PBXGroup;
 			children = (
 				2D3A926321F422F700D46FB8 /* Info.plist */,
+				2D858E68222498ED009E48E1 /* AddRecipeViewController.swift */,
 				2D3A925721F422F600D46FB8 /* AppDelegate.swift */,
+				2DF9924222237837000EC019 /* IngredientsViewController.swift */,
 				2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */,
 				2D3A928521F4232E00D46FB8 /* NokorimonoViewController.swift */,
+				2DF8A3AD22247BE400E04E2D /* ProfileViewController.swift */,
 				2DB150FF21F4833F00EC21AB /* RecipeCell.swift */,
 				2D3A928921F45DA100D46FB8 /* SwiftyJSON.swift */,
 				2DB1510121F4879600EC21AB /* WebsiteController.swift */,
 				2DEC1A7521F502A500F0DAAC /* Assets.xcassets */,
 				2D3A926021F422F700D46FB8 /* LaunchScreen.storyboard */,
 				2D3A925B21F422F600D46FB8 /* Main.storyboard */,
-				2DF9924222237837000EC019 /* IngredientsViewController.swift */,
-				2DF8A3AD22247BE400E04E2D /* ProfileViewController.swift */,
-				2D858E68222498ED009E48E1 /* AddRecipeViewController.swift */,
 			);
 			path = Nokorimono;
 			sourceTree = "<group>";

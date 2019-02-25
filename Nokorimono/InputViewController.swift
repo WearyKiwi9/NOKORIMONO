@@ -40,24 +40,18 @@ class InputViewController: UIViewController {
         enterButton.isHidden = true
     }
     
-//    @IBAction func onTap(_ sender: Any) {
-//        view.endEditing(true)
-//    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "DishNext" {
+        if segue.identifier == "DishSegue" {
             let vc = segue.destination as! NokorimonoViewController
             vc.search = dishField.text ?? "chicken"
-        } else if segue.identifier == "IngredientNext" {
+            dishField.text = ""
+        } else if segue.identifier == "IngredientSegue" {
             let ic = segue.destination as! IngredientsViewController
             //controller.history = self.history
         }  else if segue.identifier == "ProfileSegue" {
-            let ProfileDestViewController = segue.destination as! UINavigationController
-            let pc = ProfileDestViewController.topViewController as! ProfileViewController
-            //targetController.data = "hello from ReceiveVC !"
+            let pc = segue.destination as! ProfileViewController
         } else if segue.identifier == "AddRecipeSegue" {
-            let AddRecipeDestViewController = segue.destination as! UINavigationController
-            let arc = AddRecipeDestViewController.topViewController as! AddRecipeViewController
+            let arc = segue.destination as! AddRecipeViewController
         }
     }
 }
