@@ -12,6 +12,7 @@ class RecipeCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var posterView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

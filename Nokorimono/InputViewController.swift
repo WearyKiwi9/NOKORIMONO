@@ -74,6 +74,7 @@ class InputViewController: UIViewController, UITextFieldDelegate {
                 let vc = segue.destination as! NokorimonoViewController
                 vc.search = dishField.text ?? "chicken"
                 dishField.text = ""
+                vc.hidesBottomBarWhenPushed = true
             } else {
                 let alertController = UIAlertController(title: "Nokorimono", message:
                     "Enter a dish name", preferredStyle: .alert)
@@ -81,13 +82,15 @@ class InputViewController: UIViewController, UITextFieldDelegate {
                 
                 self.present(alertController, animated: true, completion: nil)
             }
-        } else if segue.identifier == "IngredientSegue" {
+        } else if segue.identifier == "IngredientsSegue" {
             let ic = segue.destination as! IngredientsViewController
-            //controller.history = self.history
+            ic.hidesBottomBarWhenPushed = true
         }  else if segue.identifier == "ProfileSegue" {
             let pc = segue.destination as! ProfileViewController
+            pc.hidesBottomBarWhenPushed = true
         } else if segue.identifier == "AddRecipeSegue" {
             let arc = segue.destination as! AddRecipeViewController
+            arc.hidesBottomBarWhenPushed = true
         }
     }
 }

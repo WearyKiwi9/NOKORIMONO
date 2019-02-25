@@ -47,7 +47,6 @@ class NokorimonoViewController: UIViewController, UITableViewDataSource, UITable
         cell.posterView.af_setImage(withURL: posterUrl!)
        
         return cell
-
     }
         
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
