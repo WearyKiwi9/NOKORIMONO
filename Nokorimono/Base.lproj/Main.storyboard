@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhU-rt-dSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-125" y="479"/>
+            <point key="canvasLocation" x="1119" y="478"/>
         </scene>
         <!--Nokorimono-->
         <scene sceneID="tne-QT-ifu">
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="479"/>
+            <point key="canvasLocation" x="1817" y="478"/>
         </scene>
         <!--Nokorimono-->
         <scene sceneID="hA7-8g-foW">
@@ -195,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlh-J9-PlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240.80000000000001" y="-288.30584707646182"/>
+            <point key="canvasLocation" x="1817" y="-288"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eYX-HC-KXr">
@@ -208,11 +208,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="JXM-36-85L" kind="relationship" relationship="viewControllers" id="EQL-DE-a3v"/>
+                        <segue destination="JXn-3w-67k" kind="relationship" relationship="viewControllers" id="30X-JC-vwy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0k-bt-vDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="-983"/>
+            <point key="canvasLocation" x="3076" y="-978"/>
         </scene>
         <!--Profile-->
         <scene sceneID="iOb-Pe-Xw7">
@@ -228,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScZ-sH-6qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="-945"/>
+            <point key="canvasLocation" x="1042" y="-288"/>
         </scene>
         <!--Website Controller-->
         <scene sceneID="FfD-4d-qTs">
@@ -245,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHf-oQ-1ep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="1146"/>
+            <point key="canvasLocation" x="1817" y="1186"/>
         </scene>
         <!--Main-->
         <scene sceneID="1aH-It-Rn8">
@@ -264,7 +265,66 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vg8-Sa-Gnf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-442" y="-288"/>
+            <point key="canvasLocation" x="2607" y="-288"/>
+        </scene>
+        <!--Social View Controller-->
+        <scene sceneID="IMT-GO-uXG">
+            <objects>
+                <viewController id="ZVT-Co-DpV" customClass="SocialViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KWJ-Tp-m2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a4f-pY-vCZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="Z1v-Vz-2Xp" customClass="PostCell" customModule="Nokorimono" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z1v-Vz-2Xp" id="eo3-mr-dkO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a4f-pY-vCZ" firstAttribute="leading" secondItem="Mbb-kv-kmE" secondAttribute="leading" id="cyo-Ub-ofy"/>
+                            <constraint firstItem="a4f-pY-vCZ" firstAttribute="top" secondItem="KWJ-Tp-m2Q" secondAttribute="top" id="fQB-mg-1cg"/>
+                            <constraint firstAttribute="bottom" secondItem="a4f-pY-vCZ" secondAttribute="bottom" id="qqe-Xn-ULB"/>
+                            <constraint firstItem="a4f-pY-vCZ" firstAttribute="trailing" secondItem="Mbb-kv-kmE" secondAttribute="trailing" id="tuh-tg-TKr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mbb-kv-kmE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ddl-j6-i8F">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="896-Gm-Lu4">
+                            <connections>
+                                <segue destination="R8L-xS-dEF" kind="show" identifier="CreatePostSegue" id="nQC-0Z-8Eg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fh6-kx-Bn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4336.8000000000002" y="-288.30584707646182"/>
+        </scene>
+        <!--Create Post View Controller-->
+        <scene sceneID="gOY-KN-GUq">
+            <objects>
+                <viewController id="R8L-xS-dEF" customClass="CreatePostViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="19K-LA-IBj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WZS-1H-8Jh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVk-jK-0KX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5095" y="-288"/>
         </scene>
         <!--Add Recipe-->
         <scene sceneID="1Lm-g1-CVg">
@@ -280,7 +340,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ese-ul-MOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1471" y="-457"/>
+            <point key="canvasLocation" x="302" y="-288"/>
+        </scene>
+        <!--Social Media Page-->
+        <scene sceneID="Z2I-1q-fqZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JXn-3w-67k" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Social Media Page" id="lYE-Ph-fha"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KOc-ZB-6IW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZVT-Co-DpV" kind="relationship" relationship="rootViewController" id="jj4-5V-dHP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lNZ-ms-rEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3557.5999999999999" y="-288.30584707646182"/>
         </scene>
     </scenes>
     <resources>
