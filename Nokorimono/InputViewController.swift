@@ -70,9 +70,17 @@ class InputViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DishSegue" {
-            let vc = segue.destination as! NokorimonoViewController
-            vc.search = dishField.text ?? "chicken"
-            dishField.text = ""
+            if dishField.text != "" {
+                let vc = segue.destination as! NokorimonoViewController
+                vc.search = dishField.text ?? "chicken"
+                dishField.text = ""
+            } else {
+                let alertController = UIAlertController(title: "Nokorimono", message:
+                    "Enter a dish name", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                
+                self.present(alertController, animated: true, completion: nil)
+            }
         } else if segue.identifier == "IngredientSegue" {
             let ic = segue.destination as! IngredientsViewController
             //controller.history = self.history
