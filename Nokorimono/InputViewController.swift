@@ -32,7 +32,6 @@ class InputViewController: UIViewController {
     }
     
     var search = ""
-    var ingredients: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,28 +40,24 @@ class InputViewController: UIViewController {
         enterButton.isHidden = true
     }
     
-    @IBAction func onTap(_ sender: Any) {
-        view.endEditing(true)
-    }
-//
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            let vc = segue.destination as! NokorimonoViewController
-//            vc.search = dishField.text ?? "chicken"
-//
+//    @IBAction func onTap(_ sender: Any) {
+//        view.endEditing(true)
 //    }
-//
-//    func scanbutton(sender:UIButton!) {
-//        performSegue(withIdentifier: "enterButton", sender: self)
-//    }
-//
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DishNext" {
             let vc = segue.destination as! NokorimonoViewController
             vc.search = dishField.text ?? "chicken"
         } else if segue.identifier == "IngredientNext" {
-            let controller = segue.destination as! IngredientsViewController
+            let ic = segue.destination as! IngredientsViewController
             //controller.history = self.history
+        }  else if segue.identifier == "ProfileSegue" {
+            let ProfileDestViewController = segue.destination as! UINavigationController
+            let pc = ProfileDestViewController.topViewController as! ProfileViewController
+            //targetController.data = "hello from ReceiveVC !"
+        } else if segue.identifier == "AddRecipeSegue" {
+            let AddRecipeDestViewController = segue.destination as! UINavigationController
+            let arc = AddRecipeDestViewController.topViewController as! AddRecipeViewController
         }
     }
-
 }

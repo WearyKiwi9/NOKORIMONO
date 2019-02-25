@@ -174,7 +174,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O3b-eo-7X3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nokorimono" id="h0O-dv-ASN"/>
+                    <navigationItem key="navigationItem" title="Nokorimono" id="h0O-dv-ASN">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="VT7-tX-FrA">
+                            <connections>
+                                <segue destination="iDw-6t-RNM" kind="presentation" identifier="ProfileSegue" id="pjw-8w-tke"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="fwK-Pj-ngZ">
+                            <connections>
+                                <segue destination="EiL-P4-kW4" kind="presentation" identifier="AddRecipeSegue" id="EIy-pG-F2I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dishField" destination="y5q-2D-gbS" id="5PU-tt-BVr"/>
                         <outlet property="enterButton" destination="vzi-Zc-ZkT" id="nGE-Zs-xdC"/>
@@ -185,6 +196,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlh-J9-PlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="240.80000000000001" y="-288.30584707646182"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="iOb-Pe-Xw7">
+            <objects>
+                <viewController id="584-DA-gp7" customClass="ProfileViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bNI-ZU-Yqf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4gW-sL-FoB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="twL-4e-BzH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScZ-sH-6qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1999.2" y="-285.60719640179911"/>
         </scene>
         <!--Website Controller-->
         <scene sceneID="FfD-4d-qTs">
@@ -220,6 +247,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vg8-Sa-Gnf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-442" y="-288"/>
+        </scene>
+        <!--Add Recipe-->
+        <scene sceneID="1Lm-g1-CVg">
+            <objects>
+                <viewController id="9G8-qE-8sS" customClass="AddRecipeViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ht-XI-Tqb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tau-Cs-is1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Recipe" id="zqD-Tf-ev9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ese-ul-MOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1999.2" y="-973.76311844077964"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kne-3V-Ttp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iDw-6t-RNM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GaV-Sm-Fqi">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="584-DA-gp7" kind="relationship" relationship="rootViewController" id="t6H-nz-9pu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8q-08-Z07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="-285.60719640179911"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VKx-d3-ojM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EiL-P4-kW4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="379-5i-cIy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9G8-qE-8sS" kind="relationship" relationship="rootViewController" id="9R2-Oa-rDY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SiE-lI-GRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="-974.6626686656673"/>
         </scene>
     </scenes>
     <resources>
