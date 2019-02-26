@@ -320,18 +320,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-Sg-NtL">
-                                <rect key="frame" x="157" y="544" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-Sg-NtL">
+                                <rect key="frame" x="157.5" y="573" width="60" height="30"/>
                                 <state key="normal" title="Sign Out"/>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-banner" translatesAutoresizingMaskIntoConstraints="NO" id="Scz-tf-0Dl">
+                                <rect key="frame" x="0.0" y="79" width="375" height="140"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Scz-tf-0Dl" secondAttribute="height" multiplier="375:140" id="nHD-hC-AF5"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DCf-cO-m4K" appends="YES" id="Icq-8j-hkF"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_avatar_placeholder_large" translatesAutoresizingMaskIntoConstraints="NO" id="fp1-sb-DhE">
+                                <rect key="frame" x="116" y="148" width="143" height="143"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fp1-sb-DhE" secondAttribute="height" multiplier="140:140" id="uTq-Rl-MVg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9eN-wN-rqr" appends="YES" id="D6p-ju-298"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tejal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3J-1m-TjQ">
+                                <rect key="frame" x="100" y="299" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Scz-tf-0Dl" firstAttribute="trailing" secondItem="4gW-sL-FoB" secondAttribute="trailing" id="9To-Lw-IXm"/>
+                            <constraint firstItem="4gW-sL-FoB" firstAttribute="trailing" secondItem="fp1-sb-DhE" secondAttribute="trailing" constant="116" id="Llv-ch-l2M"/>
+                            <constraint firstItem="4gW-sL-FoB" firstAttribute="trailing" secondItem="eRi-Sg-NtL" secondAttribute="trailing" constant="157.5" id="T4I-Ia-vFV"/>
+                            <constraint firstItem="Scz-tf-0Dl" firstAttribute="top" secondItem="4gW-sL-FoB" secondAttribute="top" constant="15" id="UDr-ew-MNE"/>
+                            <constraint firstItem="4gW-sL-FoB" firstAttribute="trailing" secondItem="w3J-1m-TjQ" secondAttribute="trailing" constant="100" id="VSd-ad-ilb"/>
+                            <constraint firstItem="eRi-Sg-NtL" firstAttribute="leading" secondItem="4gW-sL-FoB" secondAttribute="leading" constant="157.5" id="XF2-hR-xmE"/>
+                            <constraint firstItem="fp1-sb-DhE" firstAttribute="top" secondItem="4gW-sL-FoB" secondAttribute="top" constant="84" id="aGE-aY-ZjL"/>
+                            <constraint firstItem="w3J-1m-TjQ" firstAttribute="leading" secondItem="4gW-sL-FoB" secondAttribute="leading" constant="100" id="duu-8b-xR9"/>
+                            <constraint firstItem="4gW-sL-FoB" firstAttribute="bottom" secondItem="eRi-Sg-NtL" secondAttribute="bottom" constant="15" id="gs6-kt-Hda"/>
+                            <constraint firstItem="fp1-sb-DhE" firstAttribute="leading" secondItem="4gW-sL-FoB" secondAttribute="leading" constant="116" id="jbk-o3-JpZ"/>
+                            <constraint firstItem="Scz-tf-0Dl" firstAttribute="leading" secondItem="4gW-sL-FoB" secondAttribute="leading" id="qn0-cU-YGi"/>
+                            <constraint firstItem="w3J-1m-TjQ" firstAttribute="top" secondItem="fp1-sb-DhE" secondAttribute="bottom" constant="8" id="uy3-u6-1PV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4gW-sL-FoB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="twL-4e-BzH"/>
+                    <connections>
+                        <outlet property="bannerImage" destination="Scz-tf-0Dl" id="uIZ-d7-3FM"/>
+                        <outlet property="nameLabel" destination="w3J-1m-TjQ" id="w2Q-Pm-djO"/>
+                        <outlet property="profileImage" destination="fp1-sb-DhE" id="BS4-qG-nVL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScZ-sH-6qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9eN-wN-rqr">
+                    <connections>
+                        <action selector="onProfileButton:" destination="584-DA-gp7" id="AfB-ac-VRg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DCf-cO-m4K">
+                    <connections>
+                        <action selector="onBannerButton:" destination="584-DA-gp7" id="oZx-HW-hzC"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1040.8" y="-288.30584707646182"/>
         </scene>
@@ -467,6 +521,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Profile_avatar_placeholder_large" width="360" height="360"/>
         <image name="image" width="970" height="450"/>
+        <image name="placeholder-banner" width="1080" height="360"/>
     </resources>
 </document>
