@@ -88,9 +88,6 @@ class InputViewController: UIViewController, UITextFieldDelegate {
         }  else if segue.identifier == "ProfileSegue" {
             let pc = segue.destination as! ProfileViewController
             pc.hidesBottomBarWhenPushed = true
-        } else if segue.identifier == "AddRecipeSegue" {
-            let arc = segue.destination as! AddRecipeViewController
-            arc.hidesBottomBarWhenPushed = true
-        }
+        } 
     }
 }

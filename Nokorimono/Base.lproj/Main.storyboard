@@ -10,6 +10,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Recipe Book-->
+        <scene sceneID="lmA-fO-cGR">
+            <objects>
+                <viewController title="Recipe Book" id="2L2-PE-xxq" customClass="RecipeBookViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UoK-TQ-mg1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PZg-Ar-ftK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeBookCell" id="SJp-WK-zgk" customClass="RecipeBookCell" customModule="Nokorimono" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SJp-WK-zgk" id="rZU-QF-8LY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="93E-WC-XKa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9hb-mg-Irg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301.60000000000002" y="476.31184407796104"/>
+        </scene>
         <!--Ingredients View Controller-->
         <scene sceneID="l0j-yt-vQA">
             <objects>
@@ -180,11 +212,6 @@
                                 <segue destination="584-DA-gp7" kind="show" identifier="ProfileSegue" id="Sqp-i4-cHV"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="+" id="fwK-Pj-ngZ">
-                            <connections>
-                                <segue destination="9G8-qE-8sS" kind="show" identifier="AddRecipeSegue" id="ogx-Ml-SZ0"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="dishField" destination="y5q-2D-gbS" id="5PU-tt-BVr"/>
@@ -312,6 +339,32 @@
             </objects>
             <point key="canvasLocation" x="3076" y="-978"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="g56-20-BmQ">
+            <objects>
+                <viewController title="Settings" id="LCY-0u-ley" customClass="SettingsViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJ7-qd-fNO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlA-PU-7Xp">
+                                <rect key="frame" x="127" y="564" width="123" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Delete Account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ldz-9h-Fj1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqa-Jq-V6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="-1013"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="iOb-Pe-Xw7">
             <objects>
@@ -350,6 +403,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtN-En-UzY">
+                                <rect key="frame" x="144" y="345" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Recipe Book"/>
+                                <connections>
+                                    <segue destination="2L2-PE-xxq" kind="show" identifier="RecipeBookSegue" id="5xC-zY-6tU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -368,7 +429,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4gW-sL-FoB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="twL-4e-BzH"/>
+                    <navigationItem key="navigationItem" title="Profile" id="twL-4e-BzH">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="2SP-2y-Ope">
+                            <connections>
+                                <segue destination="LCY-0u-ley" kind="show" identifier="SettingsSegue" id="Imx-Vh-BYN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bannerImage" destination="Scz-tf-0Dl" id="uIZ-d7-3FM"/>
                         <outlet property="nameLabel" destination="w3J-1m-TjQ" id="w2Q-Pm-djO"/>
@@ -483,22 +550,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QVk-jK-0KX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5095" y="-288"/>
-        </scene>
-        <!--Add Recipe-->
-        <scene sceneID="1Lm-g1-CVg">
-            <objects>
-                <viewController id="9G8-qE-8sS" customClass="AddRecipeViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2ht-XI-Tqb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="tau-Cs-is1"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Add Recipe" id="zqD-Tf-ev9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ese-ul-MOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="302" y="-288"/>
         </scene>
         <!--Social Media Page-->
         <scene sceneID="Z2I-1q-fqZ">
