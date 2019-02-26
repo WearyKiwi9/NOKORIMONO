@@ -9,6 +9,7 @@ target 'Nokorimono' do
     pod 'Alamofire'
     pod 'SwiftyJSON'
     pod 'AlamofireImage'
+    pod 'Parse'
 
   target 'NokorimonoTests' do
     inherit! :search_paths
