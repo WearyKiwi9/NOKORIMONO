@@ -7,20 +7,21 @@
 //
 
 import UIKit
+import WSTagsField
 
 class InputViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var dishField: UITextField!
+    @IBOutlet weak var ingredientsField: WSTagsField!
     
     var search = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.dishField.delegate = self
         
-        let tap = UITapGestureRecognizer(target: self.view, action: Selector("endEditing:"))
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
         

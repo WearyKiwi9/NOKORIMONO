@@ -21,6 +21,8 @@ class NokorimonoViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
+
         tableView.dataSource = self
         tableView.delegate = self
         Alamofire.request("https://api.edamam.com/search?q=\(search)&app_id=eedecc1c&app_key=a064d0e3ff0a1ed49878358bef62b8d5").responseJSON { (responseData) -> Void in
@@ -30,6 +32,16 @@ class NokorimonoViewController: UIViewController, UITableViewDataSource, UITable
                 self.tableView.reloadData()
             }
         }
+    }
+    
+    @IBAction func swipeRight(_ sender: Any) {
+        let transition = CATransition()
+        transition.duration = 0.2
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromLeft
+        self.view.window!.layer.add(transition, forKey: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

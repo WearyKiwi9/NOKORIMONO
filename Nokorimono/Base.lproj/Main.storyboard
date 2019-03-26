@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Leftovers-->
+        <!--Nokorimono-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="NokorimonoViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NokorimonoViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="176" id="tIp-T4-b1f" customClass="RecipeCell" customModule="Leftovers" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="176" id="tIp-T4-b1f" customClass="RecipeCell" customModule="Nokorimono" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="176"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tIp-T4-b1f" id="QkC-KO-PlG">
@@ -37,7 +37,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Li-Mu-g6O">
-                                                    <rect key="frame" x="165" y="78.5" width="195" height="19.5"/>
+                                                    <rect key="frame" x="165" y="78.5" width="420" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -61,6 +61,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="dCe-bb-cEH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4PU-ix-AcB"/>
                             <constraint firstItem="dCe-bb-cEH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h75-Vt-uu4"/>
@@ -68,21 +69,29 @@
                             <constraint firstItem="dCe-bb-cEH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zLc-7w-PXP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cQC-1w-xUC" appends="YES" id="VCd-EZ-1nV"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Leftovers" id="1CF-Do-TOF"/>
+                    <navigationItem key="navigationItem" title="Nokorimono" id="1CF-Do-TOF"/>
                     <connections>
                         <outlet property="tableView" destination="dCe-bb-cEH" id="GgB-CV-2js"/>
                         <segue destination="8Sb-rO-chN" kind="show" identifier="toWebsite" id="tOP-0o-atO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="cQC-1w-xUC">
+                    <connections>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="zI5-jh-OwZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2713" y="528"/>
         </scene>
-        <!--Leftovers-->
+        <!--Name-->
         <scene sceneID="hA7-8g-foW">
             <objects>
-                <viewController id="QNH-Hm-kum" customClass="InputViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QNH-Hm-kum" customClass="InputViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WdS-bb-0Do">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,10 +145,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O3b-eo-7X3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Leftovers" id="h0O-dv-ASN"/>
+                    <navigationItem key="navigationItem" title="Name" id="h0O-dv-ASN"/>
                     <connections>
                         <outlet property="dishField" destination="y5q-2D-gbS" id="5PU-tt-BVr"/>
                         <outlet property="enterButton" destination="vzi-Zc-ZkT" id="nGE-Zs-xdC"/>
+                        <outlet property="ingredientsField" destination="8sv-V0-4Ma" id="a8Z-We-0OQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlh-J9-PlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,7 +178,7 @@
         <!--Profile-->
         <scene sceneID="iOb-Pe-Xw7">
             <objects>
-                <viewController id="584-DA-gp7" customClass="ProfileViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="584-DA-gp7" customClass="ProfileViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bNI-ZU-Yqf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,17 +264,26 @@
         <!--Website Controller-->
         <scene sceneID="FfD-4d-qTs">
             <objects>
-                <viewController id="8Sb-rO-chN" customClass="WebsiteController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Sb-rO-chN" customClass="WebsiteController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" id="k6Q-ST-OWh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="e5T-ge-Eni" appends="YES" id="aJX-0K-9bR"/>
+                        </connections>
                     </webView>
                     <connections>
                         <outlet property="recipeWebView" destination="k6Q-ST-OWh" id="7ZN-Qm-2Zd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHf-oQ-1ep" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="e5T-ge-Eni">
+                    <connections>
+                        <action selector="swipeRight:" destination="8Sb-rO-chN" id="Phg-O8-IBK"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2713" y="1263"/>
         </scene>
@@ -292,7 +311,7 @@
         <!--Social View Controller-->
         <scene sceneID="IMT-GO-uXG">
             <objects>
-                <viewController id="ZVT-Co-DpV" customClass="SocialViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZVT-Co-DpV" customClass="SocialViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KWJ-Tp-m2Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,7 +320,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="Z1v-Vz-2Xp" customClass="PostCell" customModule="Leftovers" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="Z1v-Vz-2Xp" customClass="PostCell" customModule="Nokorimono" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z1v-Vz-2Xp" id="eo3-mr-dkO">
@@ -336,7 +355,7 @@
         <!--Create Post View Controller-->
         <scene sceneID="gOY-KN-GUq">
             <objects>
-                <viewController id="R8L-xS-dEF" customClass="CreatePostViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="R8L-xS-dEF" customClass="CreatePostViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19K-LA-IBj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -372,7 +391,7 @@
         <!--Create Account View Controller-->
         <scene sceneID="azA-xh-Nei">
             <objects>
-                <viewController id="v8w-TW-Onv" customClass="CreateAccountViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v8w-TW-Onv" customClass="CreateAccountViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RF7-ea-vRR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -516,7 +535,7 @@
         <!--Login View Controller-->
         <scene sceneID="bO0-Yl-lL5">
             <objects>
-                <viewController id="wBg-St-JSr" customClass="LoginViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wBg-St-JSr" customClass="LoginViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SoW-x3-vLQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -609,7 +628,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="pB2-24-5VY">
             <objects>
-                <viewController id="Ufe-fP-0xA" customClass="SignInViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ufe-fP-0xA" customClass="SignInViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ZG-bR-WcR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -716,7 +735,7 @@
         <!--Contact Us View Controller-->
         <scene sceneID="gzl-w8-jTB">
             <objects>
-                <viewController id="lGd-FN-f1K" customClass="ContactUsViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lGd-FN-f1K" customClass="ContactUsViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OpB-7v-KEf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -861,7 +880,7 @@
         <!--Settings View Controller-->
         <scene sceneID="kXX-pl-JiL">
             <objects>
-                <viewController id="22M-W3-euX" customClass="SettingsViewController" customModule="Leftovers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="22M-W3-euX" customClass="SettingsViewController" customModule="Nokorimono" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfq-A2-9A2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

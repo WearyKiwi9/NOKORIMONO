@@ -8,12 +8,14 @@ PODS:
   - Parse/Core (1.17.2):
     - Bolts/Tasks (~> 1.9)
   - SwiftyJSON (4.2.0)
+  - WSTagsField (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
   - Parse
   - SwiftyJSON
+  - WSTagsField
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -22,6 +24,7 @@ SPEC REPOS:
     - Bolts
     - Parse
     - SwiftyJSON
+    - WSTagsField
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
@@ -29,7 +32,8 @@ SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Parse: 3b31a3dd1777b07ee7f0caee32fafbff544483a5
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  WSTagsField: 3a10b75c304999ead6fb2251ddc2844266e7d9f2
 
-PODFILE CHECKSUM: 86975c45cfbb7cde4d49328132ef03dbe5bbcf32
+PODFILE CHECKSUM: b6cda600774c5138106c3ab47e31790a1f6aceb6
 
 COCOAPODS: 1.5.3

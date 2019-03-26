@@ -20,8 +20,6 @@
 		2DB1510021F4833F00EC21AB /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB150FF21F4833F00EC21AB /* RecipeCell.swift */; };
 		2DB1510221F4879600EC21AB /* WebsiteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB1510121F4879600EC21AB /* WebsiteController.swift */; };
 		2DD8C2942226050B005054B7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8C2932226050B005054B7 /* SettingsViewController.swift */; };
-		2DD8C29622260746005054B7 /* RecipeBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8C29522260746005054B7 /* RecipeBookViewController.swift */; };
-		2DD8C29822260756005054B7 /* RecipeBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8C29722260756005054B7 /* RecipeBookCell.swift */; };
 		2DE92C702249C444000BF021 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE92C6F2249C444000BF021 /* CreateAccountViewController.swift */; };
 		2DE92C722249C44D000BF021 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE92C712249C44D000BF021 /* LoginViewController.swift */; };
 		2DE92C742249C456000BF021 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE92C732249C456000BF021 /* SignInViewController.swift */; };
@@ -29,7 +27,6 @@
 		2DEC1A7021F4BCDA00F0DAAC /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */; };
 		2DEC1A7621F502A500F0DAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DEC1A7521F502A500F0DAAC /* Assets.xcassets */; };
 		2DF8A3AE22247BE400E04E2D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8A3AD22247BE400E04E2D /* ProfileViewController.swift */; };
-		2DF9924322237837000EC019 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF9924222237837000EC019 /* IngredientsViewController.swift */; };
 		3E98612A769D7F806B845F03 /* Pods_Nokorimono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5924D1925C58E7C62D15D1 /* Pods_Nokorimono.framework */; };
 		FE73BDBB365FE0DCC885CFBC /* Pods_NokorimonoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31C751ECA3B9A749BDC58D7 /* Pods_NokorimonoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -54,15 +51,15 @@
 /* Begin PBXFileReference section */
 		051721FFF6718259F22FE920 /* Pods-NokorimonoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokorimonoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NokorimonoTests/Pods-NokorimonoTests.release.xcconfig"; sourceTree = "<group>"; };
 		0D83170370D6F007EC13A098 /* Pods_NokorimonoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NokorimonoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D3A925421F422F600D46FB8 /* Leftovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leftovers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3A925421F422F600D46FB8 /* Nokorimono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nokorimono.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A925721F422F600D46FB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D3A925C21F422F600D46FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D3A926121F422F700D46FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3A926321F422F700D46FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3A926821F422F700D46FB8 /* LeftoversTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeftoversTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3A926821F422F700D46FB8 /* NokorimonoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NokorimonoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A926C21F422F700D46FB8 /* NokorimonoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NokorimonoTests.swift; sourceTree = "<group>"; };
 		2D3A926E21F422F700D46FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3A927321F422F700D46FB8 /* LeftoversUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeftoversUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3A927321F422F700D46FB8 /* NokorimonoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NokorimonoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A927721F422F700D46FB8 /* NokorimonoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NokorimonoUITests.swift; sourceTree = "<group>"; };
 		2D3A927921F422F700D46FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D3A928521F4232E00D46FB8 /* NokorimonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NokorimonoViewController.swift; sourceTree = "<group>"; };
@@ -72,8 +69,6 @@
 		2DB150FF21F4833F00EC21AB /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		2DB1510121F4879600EC21AB /* WebsiteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteController.swift; sourceTree = "<group>"; };
 		2DD8C2932226050B005054B7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		2DD8C29522260746005054B7 /* RecipeBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBookViewController.swift; sourceTree = "<group>"; };
-		2DD8C29722260756005054B7 /* RecipeBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBookCell.swift; sourceTree = "<group>"; };
 		2DE92C6F2249C444000BF021 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		2DE92C712249C44D000BF021 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2DE92C732249C456000BF021 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +76,6 @@
 		2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		2DEC1A7521F502A500F0DAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		2DF8A3AD22247BE400E04E2D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		2DF9924222237837000EC019 /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		387794BFDBFC084B4FEB195E /* Pods-NokorimonoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokorimonoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokorimonoUITests/Pods-NokorimonoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EF7D3157294BB542C8E520E /* Pods-Nokorimono.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nokorimono.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nokorimono/Pods-Nokorimono.release.xcconfig"; sourceTree = "<group>"; };
 		7C82E6E9954B5975679A1232 /* Pods-NokorimonoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NokorimonoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NokorimonoTests/Pods-NokorimonoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,9 +128,9 @@
 		2D3A925521F422F600D46FB8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D3A925421F422F600D46FB8 /* Leftovers.app */,
-				2D3A926821F422F700D46FB8 /* LeftoversTests.xctest */,
-				2D3A927321F422F700D46FB8 /* LeftoversUITests.xctest */,
+				2D3A925421F422F600D46FB8 /* Nokorimono.app */,
+				2D3A926821F422F700D46FB8 /* NokorimonoTests.xctest */,
+				2D3A927321F422F700D46FB8 /* NokorimonoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,18 +169,10 @@
 		2DE92C752249C480000BF021 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2DE92C7B224A06D0000BF021 /* Search */,
+				2DE92C7A224A06CA000BF021 /* Home */,
 				2DE92C772249C65F000BF021 /* Profile */,
 				2DE92C762249C49B000BF021 /* Login */,
-				2D858E6E2224A166009E48E1 /* CreatePostViewController.swift */,
-				2DF9924222237837000EC019 /* IngredientsViewController.swift */,
-				2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */,
-				2D3A928521F4232E00D46FB8 /* NokorimonoViewController.swift */,
-				2D858E6C2224A081009E48E1 /* PostCell.swift */,
-				2DB150FF21F4833F00EC21AB /* RecipeCell.swift */,
-				2D858E6A2224A071009E48E1 /* SocialViewController.swift */,
-				2DB1510121F4879600EC21AB /* WebsiteController.swift */,
-				2DD8C29522260746005054B7 /* RecipeBookViewController.swift */,
-				2DD8C29722260756005054B7 /* RecipeBookCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -209,6 +195,27 @@
 				2DE92C782249C699000BF021 /* ContactUsViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		2DE92C7A224A06CA000BF021 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2D858E6E2224A166009E48E1 /* CreatePostViewController.swift */,
+				2D858E6C2224A081009E48E1 /* PostCell.swift */,
+				2DB150FF21F4833F00EC21AB /* RecipeCell.swift */,
+				2D858E6A2224A071009E48E1 /* SocialViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2DE92C7B224A06D0000BF021 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2DEC1A6F21F4BCDA00F0DAAC /* InputViewController.swift */,
+				2D3A928521F4232E00D46FB8 /* NokorimonoViewController.swift */,
+				2DB1510121F4879600EC21AB /* WebsiteController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		C9CACE30E721874FD864FA57 /* Frameworks */ = {
@@ -237,9 +244,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D3A925321F422F600D46FB8 /* Leftovers */ = {
+		2D3A925321F422F600D46FB8 /* Nokorimono */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3A927C21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "Leftovers" */;
+			buildConfigurationList = 2D3A927C21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "Nokorimono" */;
 			buildPhases = (
 				BB24B1A761038EEA46CDEEB4 /* [CP] Check Pods Manifest.lock */,
 				2D3A925021F422F600D46FB8 /* Sources */,
@@ -251,14 +258,14 @@
 			);
 			dependencies = (
 			);
-			name = Leftovers;
+			name = Nokorimono;
 			productName = Nokorimono;
-			productReference = 2D3A925421F422F600D46FB8 /* Leftovers.app */;
+			productReference = 2D3A925421F422F600D46FB8 /* Nokorimono.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D3A926721F422F700D46FB8 /* LeftoversTests */ = {
+		2D3A926721F422F700D46FB8 /* NokorimonoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3A927F21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "LeftoversTests" */;
+			buildConfigurationList = 2D3A927F21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "NokorimonoTests" */;
 			buildPhases = (
 				E8ED5DAFCC45F57D6EA31A47 /* [CP] Check Pods Manifest.lock */,
 				2D3A926421F422F700D46FB8 /* Sources */,
@@ -271,14 +278,14 @@
 			dependencies = (
 				2D3A926A21F422F700D46FB8 /* PBXTargetDependency */,
 			);
-			name = LeftoversTests;
+			name = NokorimonoTests;
 			productName = NokorimonoTests;
-			productReference = 2D3A926821F422F700D46FB8 /* LeftoversTests.xctest */;
+			productReference = 2D3A926821F422F700D46FB8 /* NokorimonoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2D3A927221F422F700D46FB8 /* LeftoversUITests */ = {
+		2D3A927221F422F700D46FB8 /* NokorimonoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3A928221F422F700D46FB8 /* Build configuration list for PBXNativeTarget "LeftoversUITests" */;
+			buildConfigurationList = 2D3A928221F422F700D46FB8 /* Build configuration list for PBXNativeTarget "NokorimonoUITests" */;
 			buildPhases = (
 				927ECE66379A167A4B58579F /* [CP] Check Pods Manifest.lock */,
 				2D3A926F21F422F700D46FB8 /* Sources */,
@@ -291,9 +298,9 @@
 			dependencies = (
 				2D3A927521F422F700D46FB8 /* PBXTargetDependency */,
 			);
-			name = LeftoversUITests;
+			name = NokorimonoUITests;
 			productName = NokorimonoUITests;
-			productReference = 2D3A927321F422F700D46FB8 /* LeftoversUITests.xctest */;
+			productReference = 2D3A927321F422F700D46FB8 /* NokorimonoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -319,7 +326,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D3A924F21F422F600D46FB8 /* Build configuration list for PBXProject "Leftovers" */;
+			buildConfigurationList = 2D3A924F21F422F600D46FB8 /* Build configuration list for PBXProject "Nokorimono" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -332,9 +339,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D3A925321F422F600D46FB8 /* Leftovers */,
-				2D3A926721F422F700D46FB8 /* LeftoversTests */,
-				2D3A927221F422F700D46FB8 /* LeftoversUITests */,
+				2D3A925321F422F600D46FB8 /* Nokorimono */,
+				2D3A926721F422F700D46FB8 /* NokorimonoTests */,
+				2D3A927221F422F700D46FB8 /* NokorimonoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -469,6 +476,7 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/WSTagsField/WSTagsField.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -479,6 +487,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WSTagsField.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -518,12 +527,9 @@
 				2DB1510221F4879600EC21AB /* WebsiteController.swift in Sources */,
 				2D3A925821F422F600D46FB8 /* AppDelegate.swift in Sources */,
 				2DE92C722249C44D000BF021 /* LoginViewController.swift in Sources */,
-				2DD8C29822260756005054B7 /* RecipeBookCell.swift in Sources */,
 				2DEC1A7021F4BCDA00F0DAAC /* InputViewController.swift in Sources */,
 				2D858E6B2224A071009E48E1 /* SocialViewController.swift in Sources */,
-				2DF9924322237837000EC019 /* IngredientsViewController.swift in Sources */,
 				2DE92C792249C699000BF021 /* ContactUsViewController.swift in Sources */,
-				2DD8C29622260746005054B7 /* RecipeBookViewController.swift in Sources */,
 				2D3A928621F4232E00D46FB8 /* NokorimonoViewController.swift in Sources */,
 				2D858E6D2224A081009E48E1 /* PostCell.swift in Sources */,
 				2DF8A3AE22247BE400E04E2D /* ProfileViewController.swift in Sources */,
@@ -555,12 +561,12 @@
 /* Begin PBXTargetDependency section */
 		2D3A926A21F422F700D46FB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D3A925321F422F600D46FB8 /* Leftovers */;
+			target = 2D3A925321F422F600D46FB8 /* Nokorimono */;
 			targetProxy = 2D3A926921F422F700D46FB8 /* PBXContainerItemProxy */;
 		};
 		2D3A927521F422F700D46FB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D3A925321F422F600D46FB8 /* Leftovers */;
+			target = 2D3A925321F422F600D46FB8 /* Nokorimono */;
 			targetProxy = 2D3A927421F422F700D46FB8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -756,7 +762,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leftovers.app/Leftovers";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nokorimono.app/Nokorimono";
 			};
 			name = Debug;
 		};
@@ -777,7 +783,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leftovers.app/Leftovers";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nokorimono.app/Nokorimono";
 			};
 			name = Release;
 		};
@@ -824,7 +830,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D3A924F21F422F600D46FB8 /* Build configuration list for PBXProject "Leftovers" */ = {
+		2D3A924F21F422F600D46FB8 /* Build configuration list for PBXProject "Nokorimono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3A927A21F422F700D46FB8 /* Debug */,
@@ -833,7 +839,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D3A927C21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "Leftovers" */ = {
+		2D3A927C21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "Nokorimono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3A927D21F422F700D46FB8 /* Debug */,
@@ -842,7 +848,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D3A927F21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "LeftoversTests" */ = {
+		2D3A927F21F422F700D46FB8 /* Build configuration list for PBXNativeTarget "NokorimonoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3A928021F422F700D46FB8 /* Debug */,
@@ -851,7 +857,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D3A928221F422F700D46FB8 /* Build configuration list for PBXNativeTarget "LeftoversUITests" */ = {
+		2D3A928221F422F700D46FB8 /* Build configuration list for PBXNativeTarget "NokorimonoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3A928321F422F700D46FB8 /* Debug */,

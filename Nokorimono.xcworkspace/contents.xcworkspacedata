@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/tpatel/Desktop/Development/iOS/PERSONAL PROJECTS/Nokorimono/Leftovers.xcodeproj">
+      location = "group:/Users/tpatel/Desktop/Development/iOS/PERSONAL PROJECTS/Nokorimono/Nokorimono.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Nokorimono.xcodeproj">
    </FileRef>
 </Workspace>

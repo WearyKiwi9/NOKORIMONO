@@ -10,6 +10,9 @@ target 'Nokorimono' do
     pod 'SwiftyJSON'
     pod 'AlamofireImage'
     pod 'Parse'
+    pod 'WSTagsField'
+
+    use_frameworks!
 
   target 'NokorimonoTests' do
     inherit! :search_paths

@@ -81,11 +81,11 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         dismiss(animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SettingsSegue" {
-            let ss = segue.destination as! SettingsViewController
-        } else if segue.identifier == "RecipeBookSegue" {
-            let rbs = segue.destination as! RecipeBookViewController
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "SettingsSegue" {
+//            let ss = segue.destination as! SettingsViewController
+//        } else if segue.identifier == "RecipeBookSegue" {
+//            let rbs = segue.destination as! RecipeBookViewController
+//        }
+//    }
 }
