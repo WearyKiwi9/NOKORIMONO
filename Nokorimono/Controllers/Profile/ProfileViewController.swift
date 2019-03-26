@@ -20,19 +20,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     //var imageObject = self.profileImage
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
     }
-    
-    @IBAction func swipeRight(_ sender: Any) {
-        let transition = CATransition()
-        transition.duration = 0.2
-        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromLeft
-        self.view.window!.layer.add(transition, forKey: nil)
-        navigationController?.popViewController(animated: true)
-    }
-    @IBOutlet var onProfileButton: UITapGestureRecognizer!
     
     @IBAction func onProfileButton(_ sender: Any) {
         let picker = UIImagePickerController()
@@ -80,12 +68,4 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         dismiss(animated: true, completion: nil)
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "SettingsSegue" {
-//            let ss = segue.destination as! SettingsViewController
-//        } else if segue.identifier == "RecipeBookSegue" {
-//            let rbs = segue.destination as! RecipeBookViewController
-//        }
-//    }
 }
