@@ -2,7 +2,7 @@
 //  ProfileViewController.swift
 //  Nokorimono
 //
-//  Created by Tejal Patel on 2/25/19.
+//  Created by Tejal Patel on 1/19/19.
 //  Copyright © 2019 Tejal Patel. All rights reserved.
 //
 
@@ -18,11 +18,21 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     lazy var imageObject = {self.profileImage}()
     var imageName = "profile"
     //var imageObject = self.profileImage
-    
-    @IBOutlet var onProfileButton: UITapGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
     }
+    
+    @IBAction func swipeRight(_ sender: Any) {
+        let transition = CATransition()
+        transition.duration = 0.2
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromLeft
+        self.view.window!.layer.add(transition, forKey: nil)
+        navigationController?.popViewController(animated: true)
+    }
+    @IBOutlet var onProfileButton: UITapGestureRecognizer!
     
     @IBAction func onProfileButton(_ sender: Any) {
         let picker = UIImagePickerController()
